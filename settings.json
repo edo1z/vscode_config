@@ -1,0 +1,89 @@
+{
+    "gitlens.advanced.messages": {
+        "suppressFileNotUnderSourceControlWarning": true,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 14,
+    "editor.fontFamily": " 'noto mono', 'liberation mono', 'gargi' ",
+    "workbench.colorTheme": "Legacy Contrast (rainglow)",
+
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#036",
+        "statusBar.noFolderBackground": "#036",
+        "statusBar.debuggingBackground": "#036",
+        "statusBar.foreground": "#fff"
+    },
+    "workbench.editor.showTabs": true,
+    "editor.minimap.enabled": false,
+    //phpfmt
+    "phpfmt.enable_auto_align": true,
+    "phpfmt.passes": [
+        "AutoSemicolon",
+        "ConvertOpenTagWithEcho",
+        "DoubleToSingleQuote",
+        "GeneratePHPDoc",
+        "ReplaceIsNull",
+        "ShortArray"
+    ],
+    "editor.formatOnPaste": true,
+    "git.autofetch": true,
+    "gitlens.gitExplorer.files.layout": "auto",
+    "editor.renderWhitespace": "boundary",
+    "cSpell.ignoreRegExpList": [
+        "[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"
+    ],
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    //vim
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {"before":["j","j"], "after":["<Esc>"]},
+    ],
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {"before":[";"],"after":[":"]},
+        {"before":["s","l"],"after":["<C-w>","l"]},
+        {"before":["s","j"],"after":["<C-w>","j"]},
+        {"before":["s","k"],"after":["<C-w>","k"]},
+        {"before":["s","h"],"after":["<C-w>","h"]},
+        {"before":["s","="],"after":["<C-w>","="]},
+        {"before":["s","n"],"after":["g","t"]},
+        {"before":["s","p"],"after":["g","T"]},
+        {"before":["s","s"], "after":[],"commands":[ {"command": "workbench.action.splitEditorRight"} ]},
+        {"before":["s","v"], "after":[],"commands":[ {"command": "workbench.action.splitEditorDown"} ]},
+        {"before":["s","d"], "after":[],"commands":[ {"command": "editor.action.goToDeclaration"} ]},
+        {"before":["s","i"], "after":[],"commands":[ {"command": "editor.action.goToImplementation"} ]},
+        {"before":["s","b"], "after":[],"commands":[ {"command": "workbench.action.toggleSidebarVisibility"} ]},
+        {"before":["s","f","t"], "after":[],"commands":[ {"command": "bookmarks.toggle"} ]},
+        {"before":["s","f","l"], "after":[],"commands":[ {"command": "bookmarks.listFromAllFiles"} ]},
+        {"before":["s","f","n"], "after":[],"commands":[ {"command": "bookmarks.jumpToNext"} ]},
+        {"before":["s","f","p"], "after":[],"commands":[ {"command": "bookmarks.jumpToPrevious"} ]},
+        {"before":["s","f","c"], "after":[],"commands":[ {"command": "bookmarks.clearFromAllFiles"} ]},
+    ],
+    "vim.leader":"<space>",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": ["#036", "#fff"],
+        "insert": "#060",
+        "visual": "#c50",
+        "visualline": "#c50",
+        "visualblock": "#c50",
+        "replace": "#c50"
+    },
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.easymotionMarkerFontFamily": "'noto mono', 'liberation mono', 'gargi'",
+    "vim.easymotionMarkerBackgroundColor": "#000",
+    "vim.easymotionMarkerForegroundColorOneChar": "#ff0",
+    "vim.easymotionMarkerYOffset": 5,
+    "vim.easymotionMarkerForegroundColorTwoChar": "#f90",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "window.zoomLevel": 0,
+    "files.associations": {
+        "*.tpl": "html"
+    },
+}
