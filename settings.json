@@ -1,89 +1,216 @@
 {
-    "gitlens.advanced.messages": {
-        "suppressFileNotUnderSourceControlWarning": true,
-        "suppressShowKeyBindingsNotice": true
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "files.insertFinalNewline": true,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": true,
+  "breadcrumbs.enabled": true,
+  "files.autoGuessEncoding": false,
+  "files.trimFinalNewlines": false,
+  // bookmarks
+  "bookmarks.treeview.visible": true,
+  "files.autoSave": "afterDelay",
+  "window.title": "${dirty}${activeEditorLong}${separator}${rootName}",
+  // color
+  "workbench.colorTheme": "Hawaii Contrast (rainglow)",
+  "workbench.colorCustomizations": {
+    "statusBarItem.remoteBackground": "#111",
+    "statusBarItem.remoteForeground": "#fff",
+    "statusBar.background": "#111",
+    "statusBar.noFolderBackground": "#111",
+    "statusBar.debuggingBackground": "#111",
+    "statusBar.foreground": "#ffffff"
+  },
+  // material-icon-theme
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.activeIconPack": "vue",
+  "material-icon-theme.hidesExplorerArrows": true,
+  // Vim
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.visualstart": true,
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.useCtrlKeys": true,
+  // vim keybind
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-u>": true,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-h>": false,
+    "<C-a>": false,
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 14,
-    "editor.fontFamily": " 'noto mono', 'liberation mono', 'gargi' ",
-    "workbench.colorTheme": "Legacy Contrast (rainglow)",
-
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#036",
-        "statusBar.noFolderBackground": "#036",
-        "statusBar.debuggingBackground": "#036",
-        "statusBar.foreground": "#fff"
+    {
+      "before": [
+        ":"
+      ],
+      "after": [
+        ";"
+      ]
     },
-    "workbench.editor.showTabs": true,
-    "editor.minimap.enabled": false,
-    //phpfmt
-    "phpfmt.enable_auto_align": true,
-    "phpfmt.passes": [
-        "AutoSemicolon",
-        "ConvertOpenTagWithEcho",
-        "DoubleToSingleQuote",
-        "GeneratePHPDoc",
-        "ReplaceIsNull",
-        "ShortArray"
-    ],
-    "editor.formatOnPaste": true,
-    "git.autofetch": true,
-    "gitlens.gitExplorer.files.layout": "auto",
-    "editor.renderWhitespace": "boundary",
-    "cSpell.ignoreRegExpList": [
-        "[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"
-    ],
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    //vim
-    "vim.useSystemClipboard": true,
-    "vim.insertModeKeyBindings": [
-        {"before":["j","j"], "after":["<Esc>"]},
-    ],
-    "vim.easymotion": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {"before":[";"],"after":[":"]},
-        {"before":["s","l"],"after":["<C-w>","l"]},
-        {"before":["s","j"],"after":["<C-w>","j"]},
-        {"before":["s","k"],"after":["<C-w>","k"]},
-        {"before":["s","h"],"after":["<C-w>","h"]},
-        {"before":["s","="],"after":["<C-w>","="]},
-        {"before":["s","n"],"after":["g","t"]},
-        {"before":["s","p"],"after":["g","T"]},
-        {"before":["s","s"], "after":[],"commands":[ {"command": "workbench.action.splitEditorRight"} ]},
-        {"before":["s","v"], "after":[],"commands":[ {"command": "workbench.action.splitEditorDown"} ]},
-        {"before":["s","d"], "after":[],"commands":[ {"command": "editor.action.goToDeclaration"} ]},
-        {"before":["s","i"], "after":[],"commands":[ {"command": "editor.action.goToImplementation"} ]},
-        {"before":["s","b"], "after":[],"commands":[ {"command": "workbench.action.toggleSidebarVisibility"} ]},
-        {"before":["s","f","t"], "after":[],"commands":[ {"command": "bookmarks.toggle"} ]},
-        {"before":["s","f","l"], "after":[],"commands":[ {"command": "bookmarks.listFromAllFiles"} ]},
-        {"before":["s","f","n"], "after":[],"commands":[ {"command": "bookmarks.jumpToNext"} ]},
-        {"before":["s","f","p"], "after":[],"commands":[ {"command": "bookmarks.jumpToPrevious"} ]},
-        {"before":["s","f","c"], "after":[],"commands":[ {"command": "bookmarks.clearFromAllFiles"} ]},
-    ],
-    "vim.leader":"<space>",
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors": {
-        "normal": ["#036", "#fff"],
-        "insert": "#060",
-        "visual": "#c50",
-        "visualline": "#c50",
-        "visualblock": "#c50",
-        "replace": "#c50"
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g", "j"
+      ]
     },
-    "vim.sneak": true,
-    "vim.incsearch": true,
-    "vim.hlsearch": true,
-    "vim.foldfix": true,
-    "vim.easymotionMarkerFontFamily": "'noto mono', 'liberation mono', 'gargi'",
-    "vim.easymotionMarkerBackgroundColor": "#000",
-    "vim.easymotionMarkerForegroundColorOneChar": "#ff0",
-    "vim.easymotionMarkerYOffset": 5,
-    "vim.easymotionMarkerForegroundColorTwoChar": "#f90",
-    "vim.easymotionMarkerFontWeight": "bold",
-    "window.zoomLevel": 0,
-    "files.associations": {
-        "*.tpl": "html"
+    {
+      "before": [
+        "g", "j"
+      ],
+      "after": [
+        "j"
+      ]
     },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g", "k"
+      ]
+    },
+    {
+      "before": [
+        "g", "k"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<leader>", "l"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "<leader>", "h"
+      ],
+      "after": [
+        "0"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>", "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>", "b"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
+    },
+    {
+      "before": [
+        ":"
+      ],
+      "after": [
+        ";"
+      ]
+    }
+  ],
+  // vim color
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.commandlineinprogress": "#060",
+  "vim.statusBarColors.normal": [
+    "#111",
+    "#ffffff"
+  ],
+  "vim.statusBarColors.insert": "#036",
+  "vim.statusBarColors.visual": "#c70",
+  "vim.statusBarColors.visualline": "#c70",
+  "vim.statusBarColors.visualblock": "#07c",
+  "vim.statusBarColors.replace": "#09c",
+  "workbench.iconTheme": "material-icon-theme",
+  // git
+  "git.autofetch": true,
+  // kubernetes
+  "vs-kubernetes": {
+    "vs-kubernetes.kubectl-path": "/home/edo/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/home/edo/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path": "/home/edo/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path": "/home/edo/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "editor.renderControlCharacters": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.endOfLine": "lf",
+  "prettier.packageManager": "yarn",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // rust
+  "rust-client.disableRustup": true,
 }
