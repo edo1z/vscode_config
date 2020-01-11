@@ -16,28 +16,11 @@
   "files.autoGuessEncoding": false,
   "files.trimFinalNewlines": false,
   // bookmarks
-  "bookmarks.treeview.visible": true,
   "files.autoSave": "afterDelay",
   "window.title": "${dirty}${activeEditorLong}${separator}${rootName}",
-  // color
-  "workbench.colorTheme": "Hawaii Contrast (rainglow)",
-  "workbench.colorCustomizations": {
-    "statusBarItem.remoteBackground": "#111",
-    "statusBarItem.remoteForeground": "#fff",
-    "statusBar.background": "#111",
-    "statusBar.noFolderBackground": "#111",
-    "statusBar.debuggingBackground": "#111",
-    "statusBar.foreground": "#ffffff"
-  },
-  // material-icon-theme
-  "material-icon-theme.folders.color": "#90a4ae",
-  "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.activeIconPack": "vue",
-  "material-icon-theme.hidesExplorerArrows": false,
   // Vim
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
-  "vim.visualstart": true,
   "vim.easymotion": true,
   "vim.surround": true,
   "vim.useCtrlKeys": true,
@@ -51,148 +34,6 @@
     "<C-h>": false,
     "<C-a>": false,
   },
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        ":"
-      ]
-    },
-    {
-      "before": [
-        ":"
-      ],
-      "after": [
-        ";"
-      ]
-    },
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "g", "j"
-      ]
-    },
-    {
-      "before": [
-        "g", "j"
-      ],
-      "after": [
-        "j"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g", "k"
-      ]
-    },
-    {
-      "before": [
-        "g", "k"
-      ],
-      "after": [
-        "k"
-      ]
-    },
-    {
-      "before": [
-        "<leader>", "l"
-      ],
-      "after": [
-        "$"
-      ]
-    },
-    {
-      "before": [
-        "<leader>", "h"
-      ],
-      "after": [
-        "0"
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
-    },
-    {
-      "before": [
-        "<leader>", "m"
-      ],
-      "commands": [
-        "bookmarks.toggle"
-      ]
-    },
-    {
-      "before": [
-        "<leader>", "b"
-      ],
-      "commands": [
-        "bookmarks.list"
-      ]
-    },
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        ":"
-      ]
-    },
-    {
-      "before": [
-        ":"
-      ],
-      "after": [
-        ";"
-      ]
-    }
-  ],
-  // vim color
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.commandlineinprogress": "#060",
-  "vim.statusBarColors.normal": [
-    "#111",
-    "#ffffff"
-  ],
-  "vim.statusBarColors.insert": "#036",
-  "vim.statusBarColors.visual": "#c70",
-  "vim.statusBarColors.visualline": "#c70",
-  "vim.statusBarColors.visualblock": "#07c",
-  "vim.statusBarColors.replace": "#09c",
-  "workbench.iconTheme": "material-icon-theme",
-  // git
-  "git.autofetch": true,
-  // kubernetes
-  "vs-kubernetes": {
-    "vs-kubernetes.kubectl-path": "/home/edo/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path": "/home/edo/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-    "vs-kubernetes.helm-path": "/home/edo/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vs-kubernetes.draft-path": "/home/edo/.vs-kubernetes/tools/draft/linux-amd64/draft"
-  },
-  "editor.renderControlCharacters": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -219,4 +60,5 @@
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "workbench.colorTheme": "Seti Monokai",
 }
