@@ -9,7 +9,7 @@
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.lineNumbers": "relative",
+  // "editor.lineNumbers": "relative",
   "files.trimTrailingWhitespace": true,
   "editor.minimap.enabled": true,
   "breadcrumbs.enabled": true,
@@ -33,7 +33,7 @@
   "material-icon-theme.folders.color": "#90a4ae",
   "material-icon-theme.folders.theme": "classic",
   "material-icon-theme.activeIconPack": "vue",
-  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.hidesExplorerArrows": false,
   // Vim
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
@@ -213,4 +213,10 @@
   },
   // rust
   "rust-client.disableRustup": true,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 15,
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
 }
